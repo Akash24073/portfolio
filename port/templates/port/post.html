@@ -1,0 +1,18 @@
+{% extends 'port/main.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+<div class="main-container">
+    <img src="{{post.thumbnail.url}}">
+    <h1>{{post.headline}}</h1>
+    <h4>{{post.sub_headline}}</h4>
+
+    
+   
+    <p>{{post.body|linebreaks}}</p>
+</div>
+
+{% endblock content %}

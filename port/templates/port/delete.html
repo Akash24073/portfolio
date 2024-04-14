@@ -1,0 +1,13 @@
+{% extends 'port/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="main-container">
+    <form method="POST" action="">
+        {% csrf_token %}
+        
+        <P>Are you sure you want to delete {{item}}>?</P>
+        <input class ="btn btn-danger" type="submit" value="confirm">    
+    </form>
+</div>
+{% endblock content %}
